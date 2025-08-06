@@ -11,12 +11,13 @@
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: #222; /* Changed from #333 to #222 for a deeper text color */
+  background-color: #f4f8fb; /* Added a light background color */
 }
 
 /* Header styles */
 header {
-  background-color: #2c3e50;
+  background-color: #1a237e; /* Changed from #2c3e50 to a deep blue */
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -24,24 +25,24 @@ header {
 }
 
 header h1 {
-  color: #fff;
+  color: #ffeb3b; /* Changed from #fff to a yellow accent */
   font-size: 1.8rem;
 }
 
 nav a {
-  color: #fff;
+  color: #fff176; /* Changed from #fff to a lighter yellow */
   text-decoration: none;
   margin-left: 1.5rem;
   font-size: 1rem;
 }
 
 nav a:hover {
-  color: #3498db;
+  color: #00bcd4; /* Changed from #3498db to a cyan accent */
 }
 
 /* Hero section styles */
 .hero {
-  background-color: #3498db;
+  background-color: #00bcd4; /* Changed from #3498db to cyan */
   color: #fff;
   text-align: center;
   padding: 4rem 2rem;
@@ -58,7 +59,7 @@ nav a:hover {
 }
 
 .hero button {
-  background-color: #e74c3c;
+  background-color: #ff9800; /* Changed from #e74c3c to orange */
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -68,7 +69,7 @@ nav a:hover {
 }
 
 .hero button:hover {
-  background-color: #c0392b;
+  background-color: #f57c00; /* Changed from #c0392b to a darker orange */
 }
 
 /* Products section styles */
@@ -81,7 +82,7 @@ nav a:hover {
 
 .product-card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #bdbdbd; /* Changed from #ddd to a lighter grey */
   border-radius: 5px;
   text-align: center;
   padding: 1rem;
@@ -90,6 +91,7 @@ nav a:hover {
 
 .product-card:hover {
   transform: scale(1.05);
+  border-color: #00bcd4; /* Add accent border on hover */
 }
 
 .product-card img {
@@ -101,16 +103,17 @@ nav a:hover {
 .product-card h3 {
   font-size: 1.2rem;
   margin: 0.5rem 0;
+  color: #1a237e; /* Accent color for product titles */
 }
 
 .product-card p {
-  color: #e74c3c;
+  color: #ff9800; /* Changed from #e74c3c to orange */
   font-weight: bold;
   margin-bottom: 1rem;
 }
 
 .product-card button {
-  background-color: #2ecc71;
+  background-color: #43a047; /* Changed from #2ecc71 to green */
   color: #fff;
   border: none;
   padding: 0.6rem 1rem;
@@ -119,13 +122,13 @@ nav a:hover {
 }
 
 .product-card button:hover {
-  background-color: #27ae60;
+  background-color: #1b5e20; /* Changed from #27ae60 to a darker green */
 }
 
 /* Footer styles */
 footer {
-  background-color: #2c3e50;
-  color: #fff;
+  background-color: #1a237e; /* Changed from #2c3e50 to deep blue */
+  color: #fff176; /* Changed from #fff to a lighter yellow */
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -150,6 +153,6 @@ footer {
   }
 
   .products {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
